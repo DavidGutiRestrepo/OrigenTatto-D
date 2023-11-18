@@ -2,10 +2,19 @@ exports.showLandingPage = async (req, res) => {
     res.render('landingpage')
 }
 
-exports.showFormRegister = async (req,res) => {
-    res.render('registerclients')
+
+
+
+
+exports.showInformation = async (req,res) =>{
+    res.render('information')
 }
 
-exports.showFormLogin = async (req,res) => {
-    res.render('loginclients')
+exports.showTattoArtists = async (req,res) =>{
+    res.render('tattoartists')
 }
+
+exports.showTattoArtistCrud = async (req,res) =>{
+    res.render('tattoartistcrud')
+}
+

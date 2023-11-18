@@ -1,0 +1,26 @@
+.icon-logo {
+   
+    margin: 0 auto 0cm; /* Margen inferior de 5cm y centrado horizontal */
+    width: 70px; /* Tamaño de las imágenes */
+    height: auto;
+  }
+
+  p,a{
+    color: black;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .icon-logo {
+      width: 30px; /* Cambia el tamaño para pantallas más pequeñas */
+    }
+  }
+
+  @font-face {
+    font-family: 'Sketch';
+    src: url('/assets/fonts/sketch_gothic_school/SketchGothicSchool.ttf');
+}
+
+h2 {
+    font-family: sketch;
+    font-size: 90px;
+}

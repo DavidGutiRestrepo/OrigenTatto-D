@@ -19,3 +19,11 @@ h1 {
     font-family: sketch;
     font-size: 90px;
 }
+
+h3{
+    font-family: sketch;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Cambia los valores según desees */
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/styles/navbar.css">
+  <link rel="stylesheet" href="/assets/styles/landingpage.css">
+  
+  </head>
+
+<body>
+  <%- include ('../partials/navbar.ejs') %>
+  
+
+  <div id="tattooPreview">
+    <h1 id="fuente">Tatuadores</h1>
+    
+    <div style="display: flex; gap: 3cm;">
+        <div class="card" style="width: 18rem;">
+      <img src="/assets/images/tatuador1.webp" class="card-img-top" alt="Tatuaje ojo con lineas">
+      <div class="card-body">
+        <h3 class="card-title">Richard Aponte</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Estilo</strong></li>
+        <li class="list-group-item">Negro y gris</li>
+        <li class="list-group-item">Neo tradicional</li>
+      </ul>
+      <div class="card-body">
+        <a href="/frontend/views/pages/" class="card-link">+ Tatuajes</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="/assets/images/tatuador2.webp" class="card-img-top" alt="Tatuaje ojo con lineas">
+        <div class="card-body">
+            <h3 class="card-title">Ody Guzmán</h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Estilo</strong></li>
+            <li class="list-group-item">Realismo de sombra</li>
+            <li class="list-group-item">Diseños detallados</li>
+          </ul>
+          <div class="card-body">
+            <a href="/frontend/views/pages/" class="card-link">+ Tatuajes</a>
+          </div>
+        </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/assets/images/tatuador3.webp" class="card-img-top" alt="Tatuaje ojo con lineas">
+        <div class="card-body">
+            <h3 class="card-title">Juan Pablo</h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Estilo</strong></li>
+            <li class="list-group-item">Surrealismo</li>
+            <li class="list-group-item">Dotwork</li>
+          </ul>
+          <div class="card-body">
+            <a href="/frontend/views/pages/" class="card-link">+ Tatuajes</a>
+          </div>
+        </div>
+      <div class="card" style="width: 18rem;">
+        <img src="/assets/images/tatuador4.webp" class="card-img-top" alt="Tatuaje ojo con lineas">
+        <div class="card-body">
+            <h3 class="card-title">Casique</h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Estilo</strong></li>
+            <li class="list-group-item">Black and grey</li>
+            <li class="list-group-item">Sombra y color</li>
+          </ul>
+          <div class="card-body">
+            <a href="/frontend/views/pages/" class="card-link">+ Tatuajes</a>
+          </div>
+        </div>
+      </div>
+  </div>
+    
+</body>
+
+<script src="/frontend/static/assets/js/information.js"></script>
+</html>
