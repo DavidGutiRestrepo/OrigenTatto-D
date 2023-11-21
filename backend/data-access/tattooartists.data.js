@@ -28,3 +28,16 @@ exports.updateOne = async (filter, dataUpdated) =>{
 exports.deleteOne = async (filter) =>{
   return await tattooArtistsModel.findOneAndDelete(filter);
 };
+exports.showTattooArtistsCrud = async (req, res) => {
+  const tattoartist = await showTattooArtistController();
+  res.render('tattoartistcrud',{
+      tattoartist: tattoartist.success
+  })
+};
+
+exports.showClientCrud = async (req, res) => {
+  const clientcrud= await showClientController();
+  res.render('clientcrud',{
+      client: clientcrud.success
+  })
+};

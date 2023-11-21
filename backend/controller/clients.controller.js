@@ -1,23 +1,25 @@
 const clientUseCases = require('../usecases/clients.usecase');
 
-exports.showClientController = async (req, res) =>{
+exports.showClientController = async (req, res) => {
   try {
     const result = await clientUseCases.showClients();
 
     if (result.error) {
-      return res.json({
+      return {
         error: result.error,
-      });
+      };
     } else if (result.success) {
-      return res.json({
+      return {
         success: result.success,
-      });
+      };
     }
   } catch (error) {
     console.log(error);
+    return {
+      error: 'Ocurrió un error al obtener los datos del cliente',
+    };
   }
 };
-
 exports.createClientController = async (req, res) =>{
   try {
     const result = await clientUseCases.createClient(req.body);

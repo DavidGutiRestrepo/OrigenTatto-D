@@ -15,7 +15,10 @@ const controllerViews = require('../controller/views.controller')
 router.get('/', controllerViews.showLandingPage);
 router.get('/information', controllerViews.showInformation);
 router.get('/tattoartists', controllerViews.showTattoArtists);
-router.get('/tattoartistcrud', controllerViews.showTattoArtistCrud);
+router.get('/tattoartistcrud', controllerViews.showTattooArtistsCrud);
+
+router.get('/clientcrud', controllerViews.showClientCrud);
+
 
 router.get('/showbooking', controllerBooking.showBookingController);
 router.post('/newbooking', controllerBooking.createBookingController);
