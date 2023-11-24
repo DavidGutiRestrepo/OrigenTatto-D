@@ -34,10 +34,3 @@ exports.showTattooArtistsCrud = async (req, res) => {
       tattoartist: tattoartist.success
   })
 };
-
-exports.showClientCrud = async (req, res) => {
-  const clientcrud= await showClientController();
-  res.render('clientcrud',{
-      client: clientcrud.success
-  })
-};

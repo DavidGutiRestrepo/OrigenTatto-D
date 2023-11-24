@@ -28,3 +28,9 @@ exports.updateOne = async (filter, dataUpdated) =>{
 exports.deleteOne = async (filter) =>{
   return await clientsModel.findOneAndDelete(filter);
 };
+exports.showClientCrud = async (req, res) => {
+  const clientcrud= await showClientController();
+  res.render('clientcrud',{
+      client: clientcrud.success
+  })
+};
